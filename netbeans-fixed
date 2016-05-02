@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# setting the fixed jdk to the default only in this terminal
+export JAVA_HOME=/opt/jdk1.8.0-amd64-font-fixed 
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd \
+            -Dsun.java2d.xrender=true"
+
+export GTK2_RC_FILES="$PWD/.gtkrc"
+$PWD/bin/netbeans --jdkhome $JAVA_HOME --fontsize 9

@@ -1,0 +1,5 @@
+style "user-font" {
+  font_name = "Monospace 6"
+}
+widget_class "*" style "user-font"
+gtk-font-name="Monospace 6"
